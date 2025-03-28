@@ -60,9 +60,11 @@ itertools = "0.10.0"
 
 [features]
 default = ["groth16", "opencl"]
+cuda = ["ec-gpu-gen/opencl", "fs2", "blstrs/gpu"]
 #cuda = ["ec-gpu-gen/cuda", "fs2", "blstrs/gpu"]
 opencl = ["ec-gpu-gen/opencl", "fs2", "blstrs/gpu"]
 groth16 = []
+cuda-supraseal = []
 #cuda-supraseal = ["supraseal-c2"]
 
 # This feature disables/modifies long running tests to make the suitable for code coverage
