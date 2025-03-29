@@ -18,6 +18,7 @@ blstrs = "0.7.0"
 
 [features]
 default = ["groth16"]
-cuda = ["bellperson/cuda", "blstrs/gpu"]
+#cuda = ["bellperson/cuda", "blstrs/gpu"]
+cuda = ["bellperson/opencl", "blstrs/gpu"]
 opencl = ["bellperson/opencl", "blstrs/gpu"]
 groth16 = ["bellperson/groth16"]
